@@ -137,5 +137,17 @@
 
 
 @utility layout {
-    @apply grid gap-y-2 xl:gap-x-9 xl:px-0 *:col-start-2 xl:*:col-start-3;
+    @apply grid layout-sm xl:layout-xl gap-y-2 xl:gap-x-9 xl:px-0 *:col-start-2 xl:*:col-start-3;
+}
+
+
+@utility layout-sm {
+    grid-template-columns: 1fr min(var(--breakpoint-sm), 100%) 1fr;
+}
+
+@utility layout-xl {
+    grid-template-columns: 1fr minmax(auto, 10rem) min(var(--breakpoint-sm), 100%) minmax(
+      auto,
+      10rem
+    ) 1fr;
 }
