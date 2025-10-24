@@ -30,10 +30,6 @@
                 </p>
             </div>
         </section>
-
-        <section class="mt-12">
-            <!-- TODO: add github contribution -->
-        </section>
     </div>
 </template>
 
