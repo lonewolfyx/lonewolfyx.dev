@@ -54,18 +54,18 @@
                     />
                 </NuxtLink>
             </DockIcon>
-            <DockIcon class="bg-gray-200">
-                <NuxtLink
-                    :href="user.social.bluesky"
-                    class="flex items-center justify-center"
-                    target="_blank"
-                >
-                    <Icon
-                        class="size-full"
-                        name="ri:bluesky-fill"
-                    />
-                </NuxtLink>
-            </DockIcon>
+            <!--            <DockIcon class="bg-gray-200"> -->
+            <!--                <NuxtLink -->
+            <!--                    :href="user.social.bluesky" -->
+            <!--                    class="flex items-center justify-center" -->
+            <!--                    target="_blank" -->
+            <!--                > -->
+            <!--                    <Icon -->
+            <!--                        class="size-full" -->
+            <!--                        name="ri:bluesky-fill" -->
+            <!--                    /> -->
+            <!--                </NuxtLink> -->
+            <!--            </DockIcon> -->
             <!--            <DockIcon class="bg-gray-200"> -->
             <!--                <Icon -->
             <!--                    class="size-full" -->
