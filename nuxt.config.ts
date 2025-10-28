@@ -8,6 +8,7 @@ export default defineNuxtConfig({
         '@nuxt/icon',
         '@vueuse/nuxt',
         'shadcn-nuxt',
+        'motion-v/nuxt',
     ],
 
     devtools: {

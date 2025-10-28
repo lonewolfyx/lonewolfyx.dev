@@ -21,6 +21,8 @@
         "@vueuse/nuxt": "13.9.0",
         "class-variance-authority": "^0.7.1",
         "clsx": "^2.1.1",
+        "date-fns": "^4.1.0",
+        "dayjs": "^1.11.18",
         "eslint": "^9.37.0",
         "lucide-vue-next": "^0.545.0",
         "motion-v": "^1.7.2",
@@ -34,6 +36,7 @@
         "vue-router": "^4.5.1"
     },
     "devDependencies": {
+        "@tailwindcss/typography": "^0.5.19",
         "typescript": "^5.9.3"
     }
 }
