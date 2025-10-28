@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
 @import "tailwindcss";
 @import "tw-animate-css";
+
 @plugin "@tailwindcss/typography";
 
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+    --font-dm: "DM Mono", monospace;
     --radius-sm: calc(var(--radius) - 4px);
     --radius-md: calc(var(--radius) - 2px);
     --radius-lg: var(--radius);
@@ -132,7 +136,7 @@
     }
 
     body {
-        @apply bg-background text-foreground text-sm;
+        @apply bg-background text-foreground text-sm font-dm;
     }
 }
 
