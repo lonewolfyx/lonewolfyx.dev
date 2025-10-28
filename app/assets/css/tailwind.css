@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+@plugin "@tailwindcss/typography";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -146,7 +147,7 @@
 }
 
 @utility layout-xl {
-    grid-template-columns: 1fr minmax(auto, 10rem) min(var(--breakpoint-sm), 100%) minmax(
+    grid-template-columns: 1fr minmax(auto, 10rem) min(var(--breakpoint-lg), 100%) minmax(
       auto,
       10rem
     ) 1fr;
