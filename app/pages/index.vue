@@ -9,8 +9,7 @@
                     </h1>
                 </div>
                 <div class="">
-                    <!-- TODO: add user tags -->
-                    user tags xxx
+                    <FlipSentences :sentences="user.flipSentences" />
                 </div>
             </div>
         </header>
@@ -19,7 +18,7 @@
             <h2 class="mb-3 font-medium text-lg">
                 About
             </h2>
-            <div class="space-y-4 text-neutral-800 dark:text-neutral-300/80">
+            <div class="prose lg:prose-xl space-y-4 text-neutral-800 dark:text-neutral-300/80">
                 <p>
                     Hi, l'm front-end developer and l dream of joining and contributing to the open source community.
                 </p>

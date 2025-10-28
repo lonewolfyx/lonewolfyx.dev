@@ -9,5 +9,11 @@ export default defineAppConfig({
             github: 'https://github.com/lonewolfyx',
             bluesky: 'https://bsky.app/profile/lonewolfyx.bsky.social',
         },
+        flipSentences: [
+            'Creating with code. Small details matter.',
+            'Design Engineer',
+            'Open Source Contributor',
+            'Frontend Developer',
+        ],
     },
 })
