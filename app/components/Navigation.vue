@@ -5,55 +5,54 @@
             :magnification="30"
             class="mb-6"
         >
-            <DockIcon class="bg-gray-200">
-                <NuxtLink
-                    class="flex items-center justify-center"
-                    href="/"
-                >
+            <NuxtLink
+                class="flex items-center justify-center"
+                href="/"
+            >
+                <DockIcon class="bg-gray-200">
                     <Icon
                         :mode="'svg'"
                         class="w-20"
                         name="lucide:house"
                     />
-                </NuxtLink>
-            </DockIcon>
+                </DockIcon>
+            </NuxtLink>
             <DockSeparator />
-            <DockIcon class="bg-gray-200">
-                <NuxtLink
-                    class="flex items-center justify-center"
-                    href="/blog"
-                >
+            <NuxtLink
+                class="flex items-center justify-center"
+                href="/blog"
+            >
+                <DockIcon class="bg-gray-200">
                     <Icon
                         class="size-full"
                         name="lucide:newspaper"
                     />
-                </NuxtLink>
-            </DockIcon>
-            <DockIcon class="bg-gray-200">
-                <NuxtLink
-                    class="flex items-center justify-center"
-                    href="/projects"
-                >
+                </DockIcon>
+            </NuxtLink>
+            <NuxtLink
+                class="flex items-center justify-center"
+                href="/projects"
+            >
+                <DockIcon class="bg-gray-200">
                     <Icon
                         class="size-full"
                         name="lucide:chart-no-axes-gantt"
                     />
-                </NuxtLink>
-            </DockIcon>
+                </DockIcon>
+            </NuxtLink>
             <DockSeparator />
-            <DockIcon class="bg-gray-200">
-                <NuxtLink
-                    :href="user.social.github"
-                    class="flex items-center justify-center"
-                    target="_blank"
-                >
+            <NuxtLink
+                class="flex items-center justify-center"
+                :href="user.social.github"
+                target="_blank"
+            >
+                <DockIcon class="bg-gray-200">
                     <Icon
-                        :mode="'svg'"
                         class="size-full"
                         name="lucide:github"
                     />
-                </NuxtLink>
-            </DockIcon>
+                </DockIcon>
+            </NuxtLink>
             <!--            <DockIcon class="bg-gray-200"> -->
             <!--                <NuxtLink -->
             <!--                    :href="user.social.bluesky" -->
