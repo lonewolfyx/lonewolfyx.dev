@@ -18,7 +18,7 @@
             <h2 class="mb-3 font-medium text-lg">
                 About
             </h2>
-            <div class="prose lg:prose-xl space-y-4 text-neutral-800 dark:text-neutral-300/80">
+            <div class="prose lg:prose-xl max-w-full space-y-4 text-neutral-800 dark:text-neutral-300/80">
                 <p>
                     👋 Hey there! I’m a front-end engineer from a water town in Jiangnan, where everything feels gentle and refined — much like the way I pursue detail and perfection in my code.
                 </p>
