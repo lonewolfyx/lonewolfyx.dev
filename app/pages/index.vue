@@ -20,12 +20,10 @@
             </h2>
             <div class="prose lg:prose-xl space-y-4 text-neutral-800 dark:text-neutral-300/80">
                 <p>
-                    Hi, l'm front-end developer and l dream of joining and contributing to the open source community.
+                    👋 Hey there! I’m a front-end engineer from a water town in Jiangnan, where everything feels gentle and refined — much like the way I pursue detail and perfection in my code.
                 </p>
                 <p>
-                    As a passionate engineer and a geek who loves open source, l love building software at the
-                    sweet spot of design, problem solving, and engineering - creating something that not only
-                    looks good but is also easy to use and has a good underlying architecture
+                    Driven by a pure love for data in the very beginning, I gradually found my way into the world of programming. In life, I enjoy chatting and laughing with friends, and that’s how I earned the nickname “老司机” — a playful title that I’ve grown quite fond of. You can call me that too, as casually as sitting down for a cup of tea on Pingjiang Road.
                 </p>
             </div>
         </section>
