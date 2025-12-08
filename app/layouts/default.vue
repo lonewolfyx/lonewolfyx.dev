@@ -1,7 +1,7 @@
 <template>
     <ClientOnly>
-        <Navigation />
         <main class="relative w-full bg-background">
+            <SiteHeader />
             <Times />
             <ScreenSize />
 
@@ -15,5 +15,4 @@
 <script lang="ts" setup>
 import ScreenSize from '~/components/features/ScreenSize.vue'
 import Times from '~/components/features/Times.vue'
-import Navigation from '~/components/Navigation.vue'
 </script>
