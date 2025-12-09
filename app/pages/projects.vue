@@ -25,7 +25,7 @@
                     {{ items.organization }}
                 </LineShadowText>
 
-                <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                <div class="w-full grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                     <NuxtLink
                         v-for="project in items.repositories"
                         :key="project.name"
