@@ -20,6 +20,7 @@
                 class="flex flex-col gap-8 items-center md:items-start"
             >
                 <LineShadowText
+                    :shadow-color="colorMode==='dark'?'white':'black'"
                     class="text-4xl md:text-5xl italic"
                 >
                     {{ items.organization }}
@@ -71,6 +72,8 @@ import { Avatar, AvatarFallback, AvatarImage } from '~/components/ui/avatar'
 import { cn } from '~/lib/utils'
 import { LineShadowText } from '~/components/ui/line-shadow-text'
 import { openSource } from '~/constant/open-source'
+
+const colorMode = useColorMode()
 </script>
 
 <style scoped>
