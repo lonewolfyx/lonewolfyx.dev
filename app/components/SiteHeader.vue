@@ -44,7 +44,7 @@ const navigation: {
     {
         key: 'project',
         name: 'Project',
-        href: '/',
+        href: '/projects',
     },
     {
         key: 'blog',
