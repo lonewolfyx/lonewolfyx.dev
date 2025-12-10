@@ -22,6 +22,12 @@ export const openSource: IOpenSource[] = [
                 description: 'The ultimate front-end building block library specifically designed for Vue',
                 url: 'https://github.com/lonewolfyx/shadcn-nuxt-template',
             },
+            {
+                icon: 'repository/shadcn-vue-registry.svg',
+                name: 'Shadcn Vue Registry Template',
+                description: 'A template for running your own shadcn vue registry.',
+                url: 'https://github.com/lonewolfyx/shadcn-vue-registry-template',
+            },
         ],
     },
     {
