@@ -5,6 +5,12 @@ export const openSource: IOpenSource[] = [
         organization: 'Shadcn Vue',
         repositories: [
             {
+                icon: 'repository/shadcn-vue-hooks.svg',
+                name: 'Shadcn Vue Hooks',
+                description: 'A Vue Hooks Collection built with Shadcn Vue',
+                url: 'https://github.com/lonewolfyx/shadcn-vue-hooks',
+            },
+            {
                 icon: 'repository/vue-blocks.svg',
                 name: 'Vue Blocks',
                 description: 'The ultimate front-end building block library specifically designed for Vue',
