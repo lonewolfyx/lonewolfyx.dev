@@ -97,6 +97,12 @@ export const openSource: IOpenSource[] = [
                 description: '🎨 Generate the Release log in accordance with the GitHub Conventional Commits',
                 url: 'https://github.com/ScaffoldCore/genereleaselog',
             },
+            {
+                icon: 'repository/pnpm-catalog-helper.svg',
+                name: 'Pnpm Catalog Helper',
+                description: 'a simple pnpm catalogs help command',
+                url: 'https://github.com/ScaffoldCore/pnpm-catalog-helper',
+            },
         ],
     },
     {
