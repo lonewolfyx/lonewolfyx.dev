@@ -63,6 +63,12 @@ export const openSource: IOpenSource[] = [
         organization: 'Self Research',
         repositories: [
             {
+                icon: 'repository/git-web-hooks.svg',
+                name: 'Git Web Hooks',
+                description: 'Lightweight Git Web Hooks wrapper, currently only supports Discord',
+                url: 'https://github.com/lonewolfyx/git-web-hooks',
+            },
+            {
                 icon: 'repository/fe-stack.svg',
                 name: 'Fe Stack',
                 description: '🪂 An exciting mind map of modern front-end technology stacks',
