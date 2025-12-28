@@ -109,6 +109,12 @@ export const openSource: IOpenSource[] = [
                 description: 'a simple pnpm catalogs help command',
                 url: 'https://github.com/ScaffoldCore/pnpm-catalog-helper',
             },
+            {
+                icon: 'repository/pnpm-category-catalog.svg',
+                name: 'Pnpm Category Catalog',
+                description: 'A CLI tool for managing the pnpm workspace catalog, which helps you categorize the packages in the catalog and update the associated package.json reference.',
+                url: 'https://github.com/ScaffoldCore/pnpm-category-catalog',
+            },
         ],
     },
     {
