@@ -10,7 +10,8 @@
         "postinstall": "nuxt prepare",
         "typecheck": "nuxt typecheck",
         "lint": "eslint .",
-        "lint:fix": "eslint --fix"
+        "lint:fix": "eslint --fix",
+        "prepare": "simple-git-hooks"
     },
     "dependencies": {
         "@nuxt/content": "3.7.1",
@@ -37,6 +38,16 @@
     },
     "devDependencies": {
         "@tailwindcss/typography": "^0.5.19",
+        "lint-staged": "^16.2.7",
+        "picocolors": "^1.1.1",
+        "simple-git-hooks": "^2.13.1",
         "typescript": "^5.9.3"
+    },
+    "simple-git-hooks": {
+        "pre-commit": "npx lint-staged",
+        "commit-msg": "node scripts/verify-commit.js"
+    },
+    "lint-staged": {
+        "*": "eslint --fix"
     }
 }
