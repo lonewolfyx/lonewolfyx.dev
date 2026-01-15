@@ -4,7 +4,7 @@
             <ProfileImage />
             <div class="space-y-2">
                 <div class="flex space-x-2">
-                    <h1 class="font-semibold text-3xl sm:text-l">
+                    <h1 class="font-semibold text-3xl sm:text-l font-[Borel]">
                         {{ user.nickname }}<span class="opacity-50 text-xl">({{ user.name }})</span>
                     </h1>
                 </div>
