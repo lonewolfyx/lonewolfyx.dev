@@ -115,6 +115,12 @@ export const openSource: IOpenSource[] = [
                 description: 'A CLI tool for managing the pnpm workspace catalog, which helps you categorize the packages in the catalog and update the associated package.json reference.',
                 url: 'https://github.com/ScaffoldCore/pnpm-category-catalog',
             },
+            {
+                icon: 'repository/git-check.svg',
+                name: 'Git Ping',
+                description: 'Github organization name availability check in CLI',
+                url: 'https://github.com/lonewolfyx/git-ping',
+            },
         ],
     },
     {
