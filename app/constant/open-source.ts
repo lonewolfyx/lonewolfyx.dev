@@ -121,6 +121,18 @@ export const openSource: IOpenSource[] = [
                 description: 'Github organization name availability check in CLI',
                 url: 'https://github.com/lonewolfyx/git-ping',
             },
+            {
+                icon: 'repository/rmcache.svg',
+                name: 'Rmcache',
+                description: '💨 Remove frontend junk files.',
+                url: 'https://github.com/lonewolfyx/rmcache',
+            },
+            {
+                icon: 'repository/pkgrab.svg',
+                name: 'pkgrab',
+                description: '📦 grab unused npm package names instantly',
+                url: 'https://github.com/lonewolfyx/pkgrab',
+            },
         ],
     },
     {
