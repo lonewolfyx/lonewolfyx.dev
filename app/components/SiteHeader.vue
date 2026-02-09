@@ -47,9 +47,9 @@ const navigation: {
         href: '/projects',
     },
     {
-        key: 'blog',
-        name: 'Blog',
-        href: '/',
+        key: 'blogs',
+        name: 'Blogs',
+        href: '/blogs',
     },
 ]
 </script>

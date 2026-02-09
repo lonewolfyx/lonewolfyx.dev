@@ -3,12 +3,13 @@ import tailwindcss from '@tailwindcss/vite'
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     modules: [
-        // '@nuxt/content',
+        '@nuxt/content',
         '@nuxt/eslint',
         '@nuxt/icon',
         '@vueuse/nuxt',
         'shadcn-nuxt',
         'motion-v/nuxt',
+        'nuxt-shiki',
     ],
 
     devtools: {
@@ -27,6 +28,19 @@ export default defineNuxtConfig({
     css: [
         '~/assets/css/tailwind.css',
     ],
+
+    content: {
+        build: {
+            markdown: {
+                highlight: false,
+            },
+        },
+        // required to prevent error related to better-sqlite3 during build and deploy
+        experimental: {
+            sqliteConnector: 'native',
+        },
+    },
+
     compatibilityDate: '2025-07-15',
 
     vite: {
