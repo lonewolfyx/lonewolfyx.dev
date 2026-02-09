@@ -128,7 +128,7 @@ export default lib();
 - vite-stack → vite 一体化增强 CLI `类似 vite-plus` 但是这套只属于 *me*
 - rmdlx → npx/pnpm dlx/bun/yarn 临时缓存全歼灭
 - front-skills → AI 前端技能包合集，一键 install 直接变强
-- bumpkg → 交互式依赖升级到最新，手动改 package.json？不存在的
+- bumpkg → 交互式依赖升级到最新，手动改 package.json？不存在的。「<<<One might say “why don't use antfu's  `taze`,`npm-check` ...”，i just want say "适合自己的才是真的好">>>」
 
 这波过年前在 *9000* 产出的 `repo`，全是小而美、`npx` 即用、真正“救急一时，爽到永久”的刀片工具～  
 
