@@ -48,5 +48,4 @@ const { data: blogs } = await useAsyncData('blogs', async () => {
     const blogs = await queryCollection('blogs').all()
     return blogs.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
 })
-console.log(blogs.value)
 </script>
