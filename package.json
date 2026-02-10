@@ -52,5 +52,6 @@
     },
     "lint-staged": {
         "*": "eslint --fix"
-    }
+    },
+    "packageManager": "pnpm@10.28.1"
 }
