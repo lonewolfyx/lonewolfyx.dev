@@ -2,6 +2,17 @@ import type { IOpenSource } from '~/types/open.source'
 
 export const openSource: IOpenSource[] = [
     {
+        organization: 'WebSite',
+        repositories: [
+            {
+                icon: 'repository/lint-rules.svg',
+                name: 'Lint Rules',
+                description: 'All-in-one lint rules hub: ESLint + Plugins, Stylelint, Biome, Oxlint, OxFmt and other linters',
+                url: 'https://github.com/lonewolfyx/lint-rules',
+            },
+        ],
+    },
+    {
         organization: 'Shadcn Vue',
         repositories: [
             {
