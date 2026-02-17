@@ -2,7 +2,7 @@ import type { IOpenSource } from '~/types/open.source'
 
 export const openSource: IOpenSource[] = [
     {
-        organization: 'WebSite',
+        organization: 'WebSites / Online Tools',
         repositories: [
             {
                 icon: 'repository/lint-rules.svg',
@@ -10,40 +10,41 @@ export const openSource: IOpenSource[] = [
                 description: 'All-in-one lint rules hub: ESLint + Plugins, Stylelint, Biome, Oxlint, OxFmt and other linters',
                 url: 'https://github.com/lonewolfyx/lint-rules',
             },
-        ],
-    },
-    {
-        organization: 'Shadcn Vue',
-        repositories: [
             {
-                icon: 'repository/shadcn-vue-hooks.svg',
-                name: 'Shadcn Vue Hooks',
-                description: 'A Vue Hooks Collection built with Shadcn Vue',
-                url: 'https://github.com/lonewolfyx/shadcn-vue-hooks',
+                icon: 'repository/github-profile-visualized.svg',
+                name: 'Github Profile Visualized',
+                description: '🫣 Elegant GitHub Profile Visualization, Gain insights into your contributions, expertise, and community engagement with intuitive visualizations.',
+                url: 'https://github.com/lonewolfyx/github-profile-visualized',
             },
             {
-                icon: 'repository/vue-blocks.svg',
-                name: 'Vue Blocks',
-                description: 'The ultimate front-end building block library specifically designed for Vue',
-                url: 'https://github.com/vue-blocks/vue-blocks',
+                icon: 'repository/tsconfig-generator.svg',
+                name: 'Tsconfig Generator',
+                description: 'online configuration of tsconfig.json',
+                url: 'https://github.com/lonewolfyx/tsconfig-generator',
             },
             {
-                icon: 'repository/shadcn-vue-registry.svg',
-                name: 'Shadcn Vue Registry',
-                description: '⚙️ quickly construct the registry.json files required for shadcn-vue',
-                url: 'https://github.com/ScaffoldCore/shadcn-vue-registry',
+                icon: 'repository/oxlint-config-generator.svg',
+                name: 'Oxlint Config Generator',
+                description: '🛠️ A simple tool to generate OXLint configuration files with customizable options and rule presets, designed to streamline your code style enforcement.',
+                url: 'https://github.com/lonewolfyx/oxlint-config-generator',
             },
             {
-                icon: 'repository/shadcn-nuxt-template.svg',
-                name: 'Shadcn Nuxt Template',
-                description: 'The ultimate front-end building block library specifically designed for Vue',
-                url: 'https://github.com/lonewolfyx/shadcn-nuxt-template',
+                icon: 'repository/git-web-hooks.svg',
+                name: 'Git Web Hooks',
+                description: 'Lightweight Git Web Hooks wrapper, currently only supports Discord',
+                url: 'https://github.com/lonewolfyx/git-web-hooks',
             },
             {
-                icon: 'repository/shadcn-vue-registry.svg',
-                name: 'Shadcn Vue Registry Template',
-                description: 'A template for running your own shadcn vue registry.',
-                url: 'https://github.com/lonewolfyx/shadcn-vue-registry-template',
+                icon: 'repository/fe-stack.svg',
+                name: 'Fe Stack',
+                description: '🪂 An exciting mind map of modern front-end technology stacks',
+                url: 'https://github.com/lonewolfyx/fe-stack',
+            },
+            {
+                icon: 'repository/ranks-live.svg',
+                name: 'Ranks Live Api',
+                description: 'Daily hot list data, aggregate hot list of the whole network and all platforms',
+                url: 'https://github.com/Rankslive/RanksLiveApi',
             },
         ],
     },
@@ -71,42 +72,7 @@ export const openSource: IOpenSource[] = [
         ],
     },
     {
-        organization: 'Self Research',
-        repositories: [
-            {
-                icon: 'repository/git-web-hooks.svg',
-                name: 'Git Web Hooks',
-                description: 'Lightweight Git Web Hooks wrapper, currently only supports Discord',
-                url: 'https://github.com/lonewolfyx/git-web-hooks',
-            },
-            {
-                icon: 'repository/fe-stack.svg',
-                name: 'Fe Stack',
-                description: '🪂 An exciting mind map of modern front-end technology stacks',
-                url: 'https://github.com/lonewolfyx/fe-stack',
-            },
-            {
-                icon: 'repository/github-profile-visualized.svg',
-                name: 'Github Profile Visualized',
-                description: '🫣 Elegant GitHub Profile Visualization, Gain insights into your contributions, expertise, and community engagement with intuitive visualizations.',
-                url: 'https://github.com/lonewolfyx/github-profile-visualized',
-            },
-            {
-                icon: 'repository/tsconfig-generator.svg',
-                name: 'Tsconfig Generator',
-                description: 'online configuration of tsconfig.json',
-                url: 'https://github.com/lonewolfyx/tsconfig-generator',
-            },
-            {
-                icon: 'repository/oxlint-config-generator.svg',
-                name: 'Oxlint Config Generator',
-                description: '🛠️ A simple tool to generate OXLint configuration files with customizable options and rule presets, designed to streamline your code style enforcement.',
-                url: 'https://github.com/lonewolfyx/oxlint-config-generator',
-            },
-        ],
-    },
-    {
-        organization: 'Cli Tools',
+        organization: 'Cli',
         repositories: [
             {
                 icon: 'repository/genereleaselog.svg',
@@ -147,6 +113,41 @@ export const openSource: IOpenSource[] = [
         ],
     },
     {
+        organization: 'Shadcn Vue',
+        repositories: [
+            {
+                icon: 'repository/shadcn-vue-hooks.svg',
+                name: 'Shadcn Vue Hooks',
+                description: 'A Vue Hooks Collection built with Shadcn Vue',
+                url: 'https://github.com/lonewolfyx/shadcn-vue-hooks',
+            },
+            {
+                icon: 'repository/vue-blocks.svg',
+                name: 'Vue Blocks',
+                description: 'The ultimate front-end building block library specifically designed for Vue',
+                url: 'https://github.com/vue-blocks/vue-blocks',
+            },
+            {
+                icon: 'repository/shadcn-vue-registry.svg',
+                name: 'Shadcn Vue Registry',
+                description: '⚙️ quickly construct the registry.json files required for shadcn-vue',
+                url: 'https://github.com/ScaffoldCore/shadcn-vue-registry',
+            },
+            {
+                icon: 'repository/shadcn-nuxt-template.svg',
+                name: 'Shadcn Nuxt Template',
+                description: 'The ultimate front-end building block library specifically designed for Vue',
+                url: 'https://github.com/lonewolfyx/shadcn-nuxt-template',
+            },
+            {
+                icon: 'repository/shadcn-vue-registry.svg',
+                name: 'Shadcn Vue Registry Template',
+                description: 'A template for running your own shadcn vue registry.',
+                url: 'https://github.com/lonewolfyx/shadcn-vue-registry-template',
+            },
+        ],
+    },
+    {
         organization: 'Starter Template',
         repositories: [
             {
@@ -172,17 +173,6 @@ export const openSource: IOpenSource[] = [
                 name: 'Nuxt Template',
                 description: 'My Nuxt Template',
                 url: 'https://github.com/lonewolfyx-template/nuxt-template',
-            },
-        ],
-    },
-    {
-        organization: 'Ranks Live',
-        repositories: [
-            {
-                icon: 'repository/ranks-live.svg',
-                name: 'Ranks Live Api',
-                description: 'Daily hot list data, aggregate hot list of the whole network and all platforms',
-                url: 'https://github.com/Rankslive/RanksLiveApi',
             },
         ],
     },
