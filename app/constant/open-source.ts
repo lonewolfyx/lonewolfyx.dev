@@ -110,6 +110,12 @@ export const openSource: IOpenSource[] = [
                 description: '📦 grab unused npm package names instantly',
                 url: 'https://github.com/lonewolfyx/pkgrab',
             },
+            {
+                icon: 'repository/rmlink.svg',
+                name: 'rmlink',
+                description: 'Solves the hassle of manually deleting npm link symlinks—just run rmlink and clean up instantly',
+                url: 'https://github.com/lonewolfyx/rmlink',
+            },
         ],
     },
     {
