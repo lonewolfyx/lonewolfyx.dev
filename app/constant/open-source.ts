@@ -2,6 +2,17 @@ import type { IOpenSource } from '~/types/open.source'
 
 export const openSource: IOpenSource[] = [
     {
+        organization: 'Ai',
+        repositories: [
+            {
+                icon: 'repository/clear-skills.svg',
+                name: 'Clear Skills',
+                description: 'Clear AI skills — remove skill files from the current project or globally',
+                url: 'https://github.com/lonewolfyx/clear-skills',
+            },
+        ],
+    },
+    {
         organization: 'WebSites / Online Tools',
         repositories: [
             {
