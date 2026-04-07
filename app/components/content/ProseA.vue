@@ -1,12 +1,3 @@
-<script lang="ts" setup>
-const props = withDefaults(defineProps<{
-    href?: string
-    target?: '_blank' | '_parent' | '_self' | '_top' | (string & object) | null | undefined
-}>(), {
-    href: '',
-})
-</script>
-
 <template>
     <NuxtLink
         :href="props.href"
@@ -16,3 +7,12 @@ const props = withDefaults(defineProps<{
         <slot />
     </NuxtLink>
 </template>
+
+<script lang="ts" setup>
+const props = withDefaults(defineProps<{
+    href?: string
+    target?: '_blank' | '_parent' | '_self' | '_top' | (string & object) | null | undefined
+}>(), {
+    href: '',
+})
+</script>

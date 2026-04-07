@@ -32,25 +32,25 @@
 </template>
 
 <script lang="ts" setup>
-import { AnimatePresence, Motion } from 'motion-v'
 import type { HTMLAttributes } from 'vue'
+import { AnimatePresence, Motion } from 'motion-v'
 import { cn } from '~/lib/utils'
 
 defineOptions({
     name: 'FlipSentences',
 })
 
+const props = defineProps<IProps>()
+
 interface IProps {
     class?: HTMLAttributes['class']
     sentences: string[]
 }
 
-const props = defineProps<IProps>()
-
 const currentSentence = ref(0)
 let intervalRef: ReturnType<typeof setInterval> | null = null
 
-const startAnimation = () => {
+function startAnimation() {
     intervalRef = setInterval(() => {
         currentSentence.value
             = (currentSentence.value + 1) % props.sentences.length
@@ -75,7 +75,8 @@ onMounted(() => {
     document.addEventListener('visibilitychange', handleVisibility)
 
     onBeforeUnmount(() => {
-        if (intervalRef) clearInterval(intervalRef)
+        if (intervalRef)
+            clearInterval(intervalRef)
         document.removeEventListener('visibilitychange', handleVisibility)
     })
 })

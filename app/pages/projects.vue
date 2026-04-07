@@ -20,7 +20,7 @@
                 class="flex flex-col gap-8 items-center md:items-start"
             >
                 <LineShadowText
-                    :shadow-color="colorMode==='dark'?'white':'black'"
+                    :shadow-color="colorMode === 'dark' ? 'white' : 'black'"
                     class="text-4xl md:text-5xl italic"
                 >
                     {{ items.organization }}
@@ -58,7 +58,9 @@
                                 {{ project.name }}
                                 <span class="bg-primary absolute -left-px hidden h-6 w-px md:inline-block" />
                             </h3>
-                            <p class="text-muted-foreground text-xs">{{ project.description }}</p>
+                            <p class="text-muted-foreground text-xs">
+                                {{ project.description }}
+                            </p>
                         </div>
                     </nuxtlink>
                 </div>
@@ -69,9 +71,9 @@
 
 <script lang="ts" setup>
 import { Avatar, AvatarFallback, AvatarImage } from '~/components/ui/avatar'
-import { cn } from '~/lib/utils'
 import { LineShadowText } from '~/components/ui/line-shadow-text'
 import { openSource } from '~/constant/open-source'
+import { cn } from '~/lib/utils'
 
 const colorMode = useColorMode()
 </script>

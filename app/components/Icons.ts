@@ -1,4 +1,4 @@
-export const getIconForLanguageExtension = (language: string) => {
+export function getIconForLanguageExtension(language: string) {
     switch (language) {
         case 'json':
             return 'devicon:json'

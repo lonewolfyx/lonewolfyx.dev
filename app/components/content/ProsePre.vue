@@ -1,70 +1,3 @@
-<script lang="ts" setup>
-import type { HTMLAttributes } from 'vue'
-import { getIconForLanguageExtension } from '@/components/Icons'
-import { cn } from '~/lib/utils'
-
-const props = defineProps<{
-    code: string
-    language: string
-    filename?: string
-    highlights?: number[]
-    meta?: string
-    class?: HTMLAttributes['class']
-    unwrap?: boolean
-}>()
-
-const npmBlock = ['npm install', 'npm create', 'npm run', 'npx']
-const isNpmCommand = computed(() => npmBlock.some(s => props.code.startsWith(s)))
-const isShowingLineNumber = computed(() => props.meta?.includes('showLineNumbers'))
-
-const title = computed(() => props.filename || props.meta?.match(/title="([^"]+)"/)?.[1])
-
-const lang = computed(() => props.language.replace('language-', ''))
-const IconExtension = computed(() => {
-    return getIconForLanguageExtension(lang.value)
-})
-
-const highlighter = await getShikiHighlighter()
-const highlighted = highlighter.highlight(props.code.trimEnd(), {
-    lang: lang.value, transformers: [
-        {
-            name: 'stripe-wrapper',
-            root(node) {
-                const pre = node.children.find(child => child.type === 'element' && child.tagName === 'pre')
-                if (pre?.type === 'element') {
-                    const code = pre.children.find(child => child.type === 'element' && child.tagName === 'code')
-                    if (code?.type === 'element') {
-                        node.children = code.children
-                    }
-                }
-            },
-        },
-        {
-            name: 'modify-lines',
-            line(node) {
-                node.properties.class = undefined
-                node.properties['data-line'] = ''
-            },
-        },
-        {
-            name: 'highlight-line-inline',
-            line(node, line) {
-                if (props.highlights?.includes(line))
-                    node.properties['data-highlighted-line'] = ''
-            },
-            // TODO: implement `data-highlighted-chars`
-        },
-    ],
-})
-
-const codeAttributes = computed(() => isShowingLineNumber.value
-    ? ({
-            'data-line-numbers': '',
-            'data-line-numbers-max-digits': 2,
-        })
-    : undefined)
-</script>
-
 <template>
     <pre
         v-if="unwrap"
@@ -121,3 +54,71 @@ v-html="highlighted"
         /></pre>
     </figure>
 </template>
+
+<script lang="ts" setup>
+import type { HTMLAttributes } from 'vue'
+import { getIconForLanguageExtension } from '@/components/Icons'
+import { cn } from '~/lib/utils'
+
+const props = defineProps<{
+    code: string
+    language: string
+    filename?: string
+    highlights?: number[]
+    meta?: string
+    class?: HTMLAttributes['class']
+    unwrap?: boolean
+}>()
+
+const npmBlock = ['npm install', 'npm create', 'npm run', 'npx']
+const isNpmCommand = computed(() => npmBlock.some(s => props.code.startsWith(s)))
+const isShowingLineNumber = computed(() => props.meta?.includes('showLineNumbers'))
+
+const title = computed(() => props.filename || props.meta?.match(/title="([^"]+)"/)?.[1])
+
+const lang = computed(() => props.language.replace('language-', ''))
+const IconExtension = computed(() => {
+    return getIconForLanguageExtension(lang.value)
+})
+
+const highlighter = await getShikiHighlighter()
+const highlighted = highlighter.highlight(props.code.trimEnd(), {
+    lang: lang.value,
+    transformers: [
+        {
+            name: 'stripe-wrapper',
+            root(node) {
+                const pre = node.children.find(child => child.type === 'element' && child.tagName === 'pre')
+                if (pre?.type === 'element') {
+                    const code = pre.children.find(child => child.type === 'element' && child.tagName === 'code')
+                    if (code?.type === 'element') {
+                        node.children = code.children
+                    }
+                }
+            },
+        },
+        {
+            name: 'modify-lines',
+            line(node) {
+                node.properties.class = undefined
+                node.properties['data-line'] = ''
+            },
+        },
+        {
+            name: 'highlight-line-inline',
+            line(node, line) {
+                if (props.highlights?.includes(line))
+                    node.properties['data-highlighted-line'] = ''
+            },
+            // TODO: implement `data-highlighted-chars`
+        },
+    ],
+})
+
+const codeAttributes = computed(() => isShowingLineNumber.value
+    ? ({
+            'data-line-numbers': '',
+            'data-line-numbers-max-digits': 2,
+        })
+    : undefined)
+</script>

@@ -27,8 +27,8 @@
 </template>
 
 <script lang="ts" setup>
-import { Button } from '~/components/ui/button'
 import GitHubLink from '~/components/GitHubLink.vue'
+import { Button } from '~/components/ui/button'
 import { cn } from '~/lib/utils'
 
 const navigation: {
