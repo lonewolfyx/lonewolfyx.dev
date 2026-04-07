@@ -38,7 +38,7 @@
     },
     "devDependencies": {
         "@tailwindcss/typography": "^0.5.19",
-        "lint-staged": "^16.2.7",
+        "lint-staged": "^16.4.0",
         "nuxt-shiki": "0.3.2",
         "picocolors": "^1.1.1",
         "shiki": "^3.22.0",
