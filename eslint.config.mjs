@@ -28,5 +28,6 @@ export default antfu({
         '@typescript-eslint/no-explicit-any': 'off',
         'vue/no-v-html': 'off',
         'regexp/no-unused-capturing-group': 'off',
+        'node/prefer-global/process': 'off',
     },
 }).append(withNuxt)
