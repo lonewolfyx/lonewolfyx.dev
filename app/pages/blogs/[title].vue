@@ -2,6 +2,15 @@
     <div class="layout relative z-10 w-full px-6 pt-8 pb-8 lg:px-8 lg:pt-12 lg:pb-20">
         <section class="mt-12 space-y-12">
             <div class="container relative mb-10 md:mb-24 space-y-6">
+                <div class="flex flex-wrap justify-start">
+                    <NuxtLink to="/blogs">
+                        <Icon
+                            class="text-2xl"
+                            mode="svg"
+                            name="lucide:corner-up-left"
+                        />
+                    </NuxtLink>
+                </div>
                 <div class="flex flex-col justify-start items-start gap-12">
                     <div class="flex w-full flex-col gap-5">
                         <h1 class="text-2xl tracking-tight md:text-4xl">
