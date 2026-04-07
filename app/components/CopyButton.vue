@@ -1,26 +1,3 @@
-<script lang="ts" setup>
-import type { HTMLAttributes } from 'vue'
-import { toRefs } from 'vue'
-import { useClipboard } from '@vueuse/core'
-
-import { cn } from '@/lib/utils'
-import type { ButtonVariants } from '~/components/ui/button'
-
-const props = withDefaults(defineProps<{
-    value?: string
-    class?: HTMLAttributes['class']
-    variant?: ButtonVariants['variant']
-    tooltip?: string
-}>(), {
-    value: '',
-    variant: 'ghost',
-    tooltip: 'Copy to Clipboard',
-})
-const { value } = toRefs(props)
-
-const { copy, copied } = useClipboard({ source: value })
-</script>
-
 <template>
     <TooltipProvider>
         <Tooltip>
@@ -53,3 +30,26 @@ const { copy, copied } = useClipboard({ source: value })
         </Tooltip>
     </TooltipProvider>
 </template>
+
+<script lang="ts" setup>
+import type { HTMLAttributes } from 'vue'
+import type { ButtonVariants } from '~/components/ui/button'
+import { useClipboard } from '@vueuse/core'
+
+import { toRefs } from 'vue'
+import { cn } from '@/lib/utils'
+
+const props = withDefaults(defineProps<{
+    value?: string
+    class?: HTMLAttributes['class']
+    variant?: ButtonVariants['variant']
+    tooltip?: string
+}>(), {
+    value: '',
+    variant: 'ghost',
+    tooltip: 'Copy to Clipboard',
+})
+const { value } = toRefs(props)
+
+const { copy, copied } = useClipboard({ source: value })
+</script>

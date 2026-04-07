@@ -1,6 +1,6 @@
-<script lang="ts" setup>
-</script>
-
 <template>
     <hr class="my-4 md:my-8">
 </template>
+
+<script lang="ts" setup>
+</script>

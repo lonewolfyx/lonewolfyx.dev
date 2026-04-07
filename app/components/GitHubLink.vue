@@ -14,6 +14,6 @@
 </template>
 
 <script lang="ts" setup>
-import { siteConfig } from '~/lib/config'
 import { Button } from '~/components/ui/button'
+import { siteConfig } from '~/lib/config'
 </script>

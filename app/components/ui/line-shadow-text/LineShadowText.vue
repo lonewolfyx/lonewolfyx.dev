@@ -16,8 +16,9 @@
 </template>
 
 <script lang="ts" setup>
+import type { VNode } from 'vue'
+import { useSlots } from 'vue'
 import { cn } from '@/lib/utils'
-import { useSlots, type VNode } from 'vue'
 
 interface LineShadowTextProps {
     shadowColor?: string
