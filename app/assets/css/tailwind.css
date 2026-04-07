@@ -164,7 +164,6 @@
     }
 }
 
-
 @utility layout {
     @apply grid layout-sm xl:layout-xl gap-y-2 xl:gap-x-9 xl:px-0 *:col-start-2 xl:*:col-start-3;
 }
@@ -181,6 +180,12 @@
     ) 1fr;
 }
 
+@layer base {
+    button:not(:disabled),
+    [role="button"]:not(:disabled) {
+        cursor: pointer;
+    }
+}
 
 @layer components {
     .steps {
