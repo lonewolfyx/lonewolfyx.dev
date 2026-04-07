@@ -31,7 +31,7 @@
                 <ContentRenderer
                     v-if="blog"
                     :value="blog"
-                    class="w-full flex-1 *:data-[slot=alert]:first:mt-0"
+                    class="w-full flex-1 *:data-[slot=alert]:first:mt-0 my-20"
                 />
 
                 <FindMe />
