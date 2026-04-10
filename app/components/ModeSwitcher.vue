@@ -46,5 +46,31 @@
 <script setup lang="ts">
 import { Button } from '~/components/ui/button'
 
-const colorMode = useColorMode()
+const colorMode = useColorMode({
+    selector: 'html',
+    attribute: 'class',
+    storageKey: 'app-color-mode',
+    onChanged(value, defaultHandler) {
+        if (import.meta.server) {
+            return
+        }
+
+        const doc = document as Document & {
+            startViewTransition?: (callback: () => void | Promise<void>) => unknown
+        }
+
+        const prefersReducedMotion = window.matchMedia(
+            '(prefers-reduced-motion: reduce)',
+        ).matches
+
+        if (!doc.startViewTransition || prefersReducedMotion) {
+            defaultHandler(value)
+            return
+        }
+
+        doc.startViewTransition(() => {
+            defaultHandler(value)
+        })
+    },
+})
 </script>
