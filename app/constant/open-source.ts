@@ -10,6 +10,12 @@ export const openSource: IOpenSource[] = [
                 description: 'Clear AI skills — remove skill files from the current project or globally',
                 url: 'https://github.com/lonewolfyx/clear-skills',
             },
+            {
+                icon: 'repository/usage-board.svg',
+                name: 'Usage Board',
+                description: 'An all-in-one dashboard to quickly analyze token usage from local json files',
+                url: 'https://github.com/lonewolfyx/usage-board',
+            },
         ],
     },
     {
