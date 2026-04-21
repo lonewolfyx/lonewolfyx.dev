@@ -62,4 +62,22 @@ export default defineNuxtConfig({
         prefix: '',
         componentDir: './app/components/ui',
     },
+
+    shiki: {
+        defaultTheme: {
+            light: 'github-light-default',
+            dark: 'github-dark',
+        },
+        bundledLangs: [
+            'ts',
+            'tsx',
+            'js',
+            'vue',
+            'html',
+            'json',
+            'bash',
+            'astro',
+            'toml',
+        ],
+    },
 })
