@@ -1,75 +1,16 @@
-# Nuxt Minimal Starter
+# [lonewolfyx's notion](https://lonewolfyx.vercel.app) &middot; [![GitHub License](https://img.shields.io/github/license/lonewolfyx/lonewolfyx.dev?label=License)](https://github.com/lonewolfyx/lonewolfyx.dev/blob/master/LICENSE) ![GitHub Repo Views](https://gitviews.com/repo/lonewolfyx/lonewolfyx.dev.svg?style=flat)
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+→ Check out the live site: [lonewolfyx's notion](https://lonewolfyx.vercel.app)
 
-## Setup
+## Overview
 
-Make sure to install dependencies:
+### Stack
 
-```bash
-# npm
-npm install
+- Nuxt.js 4
+- Tailwind CSS v4
+- shadcn/ui vue
 
-# pnpm
-pnpm install
 
-# yarn
-yarn install
+## Stats
 
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+![Stats](https://repobeats.axiom.co/api/embed/21078308e8d8ad41de19e1f4e8480fda047c7348.svg "Repobeats analytics image")
