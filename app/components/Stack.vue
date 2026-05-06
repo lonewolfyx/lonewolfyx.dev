@@ -3,7 +3,7 @@
         <div class="fade-in-up">
             <TerminalBio :command="command" />
             <div class="flex flex-wrap items-center justify-start gap-2 ">
-                <div
+                <NuxtLink
                     v-for="item in data"
                     :key="item.name"
                     :class="cn(
@@ -12,6 +12,9 @@
                         'rounded-md px-2 py-1.5',
                         item.theme.background || 'bg-secondary',
                     )"
+                    :to="item.href"
+                    target="_blank"
+                    rel="noopener"
                 >
                     <Icon
                         :name="item.icon"
@@ -27,7 +30,7 @@
                             item.theme.text || 'text-white',
                         )"
                     >{{ item.name }}</span>
-                </div>
+                </NuxtLink>
             </div>
         </div>
     </DefineTemplate>
@@ -50,6 +53,7 @@ const stack = {
                 text: 'text-dark',
                 background: 'bg-[#f7df1e]',
             },
+            href: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
         },
         {
             name: 'Tavascript',
@@ -59,6 +63,7 @@ const stack = {
                 text: 'text-white',
                 background: 'bg-[#3178C6]',
             },
+            href: 'https://www.typescriptlang.org/',
         },
         {
             name: 'Vue',
@@ -68,6 +73,7 @@ const stack = {
                 text: 'text-white',
                 background: 'bg-[#4FC08D]',
             },
+            href: 'https://vuejs.org/',
         },
         {
             name: 'Nuxt',
@@ -77,6 +83,7 @@ const stack = {
                 text: 'text-white',
                 background: 'bg-[#00DC82]',
             },
+            href: 'https://nuxt.com/',
         },
         {
             name: 'React',
@@ -86,6 +93,7 @@ const stack = {
                 text: 'text-dark',
                 background: 'bg-[#61DAFB]',
             },
+            href: 'https://react.dev/',
         },
         {
             name: 'Tailwind Css',
@@ -95,6 +103,7 @@ const stack = {
                 text: 'text-white',
                 background: 'bg-[#06B6D4]',
             },
+            href: 'https://tailwindcss.com/',
         },
         {
             name: 'shadcn/ui/vue',
@@ -104,6 +113,7 @@ const stack = {
                 text: 'text-white',
                 background: 'bg-[#41B883]',
             },
+            href: 'https://shadcn-vue.com/',
         },
         {
             name: 'TanStack',
@@ -112,6 +122,7 @@ const stack = {
                 icon: 'text-dark',
                 text: 'text-dark',
             },
+            href: 'https://tanstack.com/',
         },
         {
             name: 'pnpm',
@@ -121,6 +132,7 @@ const stack = {
                 text: 'text-dark',
                 background: 'bg-[#f8ab00]',
             },
+            href: 'https://pnpm.io/',
         },
         {
             name: 'Node.js',
@@ -130,6 +142,7 @@ const stack = {
                 text: 'text-white',
                 background: 'bg-[#cb3837]',
             },
+            href: 'https://nodejs.org/',
         },
         {
             name: 'Bun',
@@ -139,6 +152,7 @@ const stack = {
                 text: 'text-white',
                 background: 'bg-black dark:bg-secondary',
             },
+            href: 'https://bun.sh/',
         },
         {
             name: 'Nitro',
@@ -148,6 +162,7 @@ const stack = {
                 text: 'text-white',
                 background: 'bg-gradient-to-r from-[#31b2f3] via-[#f27cec] to-[#fd6641]',
             },
+            href: 'https://nitro.build/',
         },
         {
             name: 'h3',
@@ -156,6 +171,7 @@ const stack = {
                 icon: 'text-dark',
                 text: 'text-dark',
             },
+            href: 'https://h3.dev/',
         },
         {
             name: 'vite',
@@ -165,6 +181,7 @@ const stack = {
                 text: 'text-white',
                 background: 'bg-[#8900ff]',
             },
+            href: 'https://vite.dev/',
         },
         {
             name: 'cac',
@@ -174,6 +191,7 @@ const stack = {
                 text: 'text-white',
                 background: 'bg-[#8b7ee7]',
             },
+            href: 'https://github.com/cacjs/cac',
         },
         {
             name: 'citty',
@@ -182,6 +200,7 @@ const stack = {
                 icon: 'text-dark',
                 text: 'text-dark',
             },
+            href: 'https://unjs.io/packages/citty',
         },
     ],
     ai: [
@@ -194,6 +213,7 @@ const stack = {
                 text: 'text-white',
                 background: 'bg-[#ff7043]',
             },
+            href: 'https://claude.ai/',
         },
         {
             name: 'codex',
@@ -203,6 +223,7 @@ const stack = {
                 text: 'text-white',
                 background: 'bg-black dark:bg-secondary',
             },
+            href: 'https://chatgpt.com/codex/cloud',
         },
         {
             name: 'gemini',
@@ -212,6 +233,7 @@ const stack = {
                 text: 'text-white',
                 background: 'bg-[#00b95c]',
             },
+            href: 'https://gemini.google.com/',
         },
     ],
 }
