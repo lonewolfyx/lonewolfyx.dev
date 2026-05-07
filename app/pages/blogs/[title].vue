@@ -3,12 +3,12 @@
         <section class="mt-12 space-y-12">
             <div class="container relative mb-10 md:mb-24 space-y-6">
                 <div class="flex flex-wrap justify-start">
-                    <NuxtLink to="/blogs">
+                    <NuxtLink to="/blogs" class="inline-flex items-center gap-2 font-mono text-base/6 text-foreground/65 transition hover:text-foreground sm:text-xs">
                         <Icon
-                            class="text-2xl"
+                            class="size-3.5"
                             mode="svg"
-                            name="lucide:corner-up-left"
-                        />
+                            name="lucide:arrow-left"
+                        />Back to home
                     </NuxtLink>
                 </div>
                 <div class="flex flex-col justify-start items-start gap-12">
