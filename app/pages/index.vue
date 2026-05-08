@@ -33,7 +33,7 @@
             </div>
             <div class="fade-in-up">
                 <TerminalBio command="git-contributions.sh" />
-                <GithubContributionGraph username="lonewolfyx" />
+                <GithubContributionGraph username="lonewolfyx" color-theme="neutral" />
             </div>
         </section>
     </div>
