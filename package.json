@@ -45,6 +45,7 @@
         "shadcn-nuxt": "2.3.1",
         "shiki": "^3.22.0",
         "simple-git-hooks": "^2.13.1",
+        "tailwind-plugin-no-scrollbar": "^0.0.2",
         "tailwindcss": "^4.1.14",
         "typescript": "^5.9.3",
         "zod": "^4.3.6"
