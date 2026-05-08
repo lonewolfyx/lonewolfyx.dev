@@ -1,8 +1,11 @@
 <template>
     <TooltipProvider :delay-duration="0">
         <svg
+            ref="svgRef"
             :viewBox="viewBox"
             aria-label="Contribution graph"
+            class="w-full h-auto"
+            preserveAspectRatio="xMinYMin meet"
             role="img"
             width="100%"
             xmlns="http://www.w3.org/2000/svg"
@@ -13,8 +16,8 @@
                 :key="label.key"
                 :x="label.x"
                 :y="MONTH_LABEL_OFFSET - 4"
+                :font-size="labelFontSize"
                 class="fill-muted-foreground"
-                font-size="10"
             >
                 {{ label.text }}
             </text>
@@ -25,8 +28,8 @@
                 :key="label.day"
                 :x="0"
                 :y="label.y"
+                :font-size="labelFontSize"
                 class="fill-muted-foreground"
-                font-size="10"
             >
                 {{ label.text }}
             </text>
@@ -125,8 +128,14 @@ const DAYS = 7
 const CELL_SIZE = 8
 const MONTH_LABEL_OFFSET = 16
 const DAY_LABEL_OFFSET = 30
+const TARGET_LABEL_FONT_SIZE = 12
 const DAY_NAMES = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
 const DISPLAY_DAYS = [1, 3, 5] // Mon, Wed, Fri
+
+const svgRef = shallowRef<SVGSVGElement | null>(null)
+const renderedWidth = shallowRef(0)
+
+let resizeObserver: ResizeObserver | null = null
 
 // --- Date Helpers ---
 function dateKey(d: Date): string {
@@ -277,9 +286,37 @@ const dayLabels = computed(() => {
 })
 
 // --- ViewBox ---
+const gridWidth = computed(() => DAY_LABEL_OFFSET + WEEKS * (CELL_SIZE + props.cellGap) - props.cellGap)
+const gridHeight = computed(() => MONTH_LABEL_OFFSET + DAYS * (CELL_SIZE + props.cellGap) - props.cellGap)
+const labelFontSize = computed(() => {
+    const scale = renderedWidth.value > 0
+        ? renderedWidth.value / gridWidth.value
+        : 1
+
+    return `${(TARGET_LABEL_FONT_SIZE / scale).toFixed(2)}px`
+})
+
 const viewBox = computed(() => {
-    const gridW = DAY_LABEL_OFFSET + WEEKS * (CELL_SIZE + props.cellGap) - props.cellGap
-    const gridH = MONTH_LABEL_OFFSET + DAYS * (CELL_SIZE + props.cellGap) - props.cellGap
-    return `0 0 ${gridW} ${gridH}`
+    return `0 0 ${gridWidth.value} ${gridHeight.value}`
+})
+
+function syncRenderedWidth() {
+    renderedWidth.value = svgRef.value?.getBoundingClientRect().width ?? gridWidth.value
+}
+
+onMounted(() => {
+    syncRenderedWidth()
+
+    if (!svgRef.value)
+        return
+
+    resizeObserver = new ResizeObserver(() => {
+        syncRenderedWidth()
+    })
+    resizeObserver.observe(svgRef.value)
+})
+
+onBeforeUnmount(() => {
+    resizeObserver?.disconnect()
 })
 </script>
