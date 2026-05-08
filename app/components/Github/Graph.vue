@@ -34,7 +34,7 @@
             <!-- Contribution Cells -->
             <template v-for="cell in cells" :key="cell.key">
                 <rect
-                    :fill="cell.color"
+                    :class="cell.color"
                     :height="CELL_SIZE"
                     :rx="cellRadius"
                     :width="CELL_SIZE"
@@ -63,25 +63,34 @@
 </template>
 
 <script lang="ts">
-// Tailwind CSS color themes (5 levels: 0=empty, 1-4=low→high)
+// Tailwind CSS fill color themes (5 levels: 0=empty, 1-4=low→high)
 export const THEMES = {
-    green: ['#ebedf0', '#9be9a8', '#40c463', '#30a14e', '#216e39'],
-    emerald: ['#ebedf0', '#a7f3d0', '#34d399', '#10b981', '#065f46'],
-    teal: ['#ebedf0', '#99f6e4', '#2dd4bf', '#14b8a6', '#115e59'],
-    cyan: ['#ebedf0', '#a5f3fc', '#22d3ee', '#06b6d4', '#155e75'],
-    sky: ['#ebedf0', '#bae6fd', '#38bdf8', '#0ea5e9', '#0c4a6e'],
-    blue: ['#ebedf0', '#bfdbfe', '#60a5fa', '#3b82f6', '#1e3a8a'],
-    indigo: ['#ebedf0', '#c7d2fe', '#818cf8', '#6366f1', '#312e81'],
-    violet: ['#ebedf0', '#ddd6fe', '#a78bfa', '#8b5cf6', '#4c1d95'],
-    purple: ['#ebedf0', '#e9d5ff', '#c084fc', '#a855f7', '#581c87'],
-    fuchsia: ['#ebedf0', '#f5d0fe', '#e879f9', '#d946ef', '#701a75'],
-    pink: ['#ebedf0', '#fbcfe8', '#f472b6', '#ec4899', '#831843'],
-    rose: ['#ebedf0', '#fecdd3', '#fb7185', '#f43f5e', '#881337'],
-    red: ['#ebedf0', '#fecaca', '#f87171', '#ef4444', '#7f1d1d'],
-    orange: ['#ebedf0', '#fed7aa', '#fb923c', '#f97316', '#7c2d12'],
-    amber: ['#ebedf0', '#fde68a', '#fbbf24', '#f59e0b', '#78350f'],
-    yellow: ['#ebedf0', '#fef08a', '#facc15', '#eab308', '#713f12'],
-    lime: ['#ebedf0', '#d9f99d', '#84cc16', '#65a30d', '#365314'],
+    red: ['fill-red-100', 'fill-red-300', 'fill-red-500', 'fill-red-600', 'fill-red-800'],
+    orange: ['fill-orange-100', 'fill-orange-300', 'fill-orange-500', 'fill-orange-600', 'fill-orange-800'],
+    amber: ['fill-amber-100', 'fill-amber-300', 'fill-amber-500', 'fill-amber-600', 'fill-amber-800'],
+    yellow: ['fill-yellow-100', 'fill-yellow-300', 'fill-yellow-500', 'fill-yellow-600', 'fill-yellow-800'],
+    lime: ['fill-lime-100', 'fill-lime-300', 'fill-lime-500', 'fill-lime-600', 'fill-lime-800'],
+    green: ['fill-green-100', 'fill-green-300', 'fill-green-500', 'fill-green-600', 'fill-green-800'],
+    emerald: ['fill-emerald-100', 'fill-emerald-300', 'fill-emerald-500', 'fill-emerald-600', 'fill-emerald-800'],
+    teal: ['fill-teal-100', 'fill-teal-300', 'fill-teal-500', 'fill-teal-600', 'fill-teal-800'],
+    cyan: ['fill-cyan-100', 'fill-cyan-300', 'fill-cyan-500', 'fill-cyan-600', 'fill-cyan-800'],
+    sky: ['fill-sky-100', 'fill-sky-300', 'fill-sky-500', 'fill-sky-600', 'fill-sky-800'],
+    blue: ['fill-blue-100', 'fill-blue-300', 'fill-blue-500', 'fill-blue-600', 'fill-blue-800'],
+    indigo: ['fill-indigo-100', 'fill-indigo-300', 'fill-indigo-500', 'fill-indigo-600', 'fill-indigo-800'],
+    violet: ['fill-violet-100', 'fill-violet-300', 'fill-violet-500', 'fill-violet-600', 'fill-violet-800'],
+    purple: ['fill-purple-100', 'fill-purple-300', 'fill-purple-500', 'fill-purple-600', 'fill-purple-800'],
+    fuchsia: ['fill-fuchsia-100', 'fill-fuchsia-300', 'fill-fuchsia-500', 'fill-fuchsia-600', 'fill-fuchsia-800'],
+    pink: ['fill-pink-100', 'fill-pink-300', 'fill-pink-500', 'fill-pink-600', 'fill-pink-800'],
+    rose: ['fill-rose-100', 'fill-rose-300', 'fill-rose-500', 'fill-rose-600', 'fill-rose-800'],
+    slate: ['fill-slate-100', 'fill-slate-300', 'fill-slate-500', 'fill-slate-600', 'fill-slate-800'],
+    gray: ['fill-gray-100', 'fill-gray-300', 'fill-gray-500', 'fill-gray-600', 'fill-gray-800'],
+    zinc: ['fill-zinc-100', 'fill-zinc-300', 'fill-zinc-500', 'fill-zinc-600', 'fill-zinc-800'],
+    neutral: ['fill-neutral-100', 'fill-neutral-300', 'fill-neutral-500', 'fill-neutral-600', 'fill-neutral-800'],
+    stone: ['fill-stone-100', 'fill-stone-300', 'fill-stone-500', 'fill-stone-600', 'fill-stone-800'],
+    taupe: ['fill-taupe-100', 'fill-taupe-300', 'fill-taupe-500', 'fill-taupe-600', 'fill-taupe-800'],
+    mauve: ['fill-mauve-100', 'fill-mauve-300', 'fill-mauve-500', 'fill-mauve-600', 'fill-mauve-800'],
+    mist: ['fill-mist-100', 'fill-mist-300', 'fill-mist-500', 'fill-mist-600', 'fill-mist-800'],
+    olive: ['fill-olive-100', 'fill-olive-300', 'fill-olive-500', 'fill-olive-600', 'fill-olive-800'],
 }
 export type ThemeName = keyof typeof THEMES
 
@@ -92,18 +101,6 @@ export interface ContributionDay {
 </script>
 
 <script lang="ts" setup>
-defineOptions({
-    name: 'GithubGraph',
-})
-
-const props = withDefaults(defineProps<Props>(), {
-    colorLevels: () => ['#ebedf0', '#9be9a8', '#40c463', '#30a14e', '#216e39'],
-    cellGap: 3,
-    cellRadius: 2,
-    showMonthLabels: true,
-    showDayLabels: true,
-})
-
 interface Props {
     data: ContributionDay[]
     colorLevels?: string[]
@@ -115,9 +112,17 @@ interface Props {
     startDate?: string // YYYY-MM-DD, SSR-safe: pass a fixed date instead of relying on new Date()
 }
 
+const props = withDefaults(defineProps<Props>(), {
+    colorLevels: () => ['fill-green-100', 'fill-green-300', 'fill-green-500', 'fill-green-600', 'fill-green-800'],
+    cellGap: 3,
+    cellRadius: 2,
+    showMonthLabels: true,
+    showDayLabels: true,
+})
+
 const WEEKS = 52
 const DAYS = 7
-const CELL_SIZE = 12
+const CELL_SIZE = 8
 const MONTH_LABEL_OFFSET = 16
 const DAY_LABEL_OFFSET = 30
 const DAY_NAMES = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
