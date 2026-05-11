@@ -38,7 +38,7 @@
         "@vueuse/core": "^13.9.0",
         "@vueuse/nuxt": "13.9.0",
         "eslint": "^9.37.0",
-        "lint-staged": "^16.4.0",
+        "nano-staged": "^1.0.2",
         "nuxt": "^4.4.2",
         "nuxt-shiki": "0.3.2",
         "picocolors": "^1.1.1",
@@ -51,10 +51,10 @@
         "zod": "^4.3.6"
     },
     "simple-git-hooks": {
-        "pre-commit": "npx lint-staged",
+        "pre-commit": "npx nano-staged",
         "commit-msg": "node scripts/verify-commit.js"
     },
-    "lint-staged": {
+    "nano-staged": {
         "*": "eslint --fix"
     }
 }
