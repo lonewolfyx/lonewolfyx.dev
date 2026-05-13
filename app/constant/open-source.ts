@@ -133,6 +133,12 @@ export const openSource: IOpenSource[] = [
                 description: 'Solves the hassle of manually deleting npm link symlinks—just run rmlink and clean up instantly',
                 url: 'https://github.com/lonewolfyx/rmlink',
             },
+            {
+                icon: 'repository/clear-branch.svg',
+                name: 'clear-branch',
+                description: 'A high-performance CLI utility designed to streamline Git repository maintenance by swiftly removing obsolete local and remote branches.',
+                url: 'https://github.com/lonewolfyx/clear-branch',
+            },
         ],
     },
     {
