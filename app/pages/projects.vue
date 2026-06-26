@@ -31,14 +31,14 @@
                                 >
                                     ▸
                                 </span>
-                                <span class="truncate text-base font-black text-foreground sm:text-lg">
+                                <span class="truncate text-base font-black text-foreground sm:text-lg capitalize">
                                     {{ items.organization }}
                                 </span>
                             </CollapsibleTrigger>
 
                             <span class="h-px flex-1 bg-border" aria-hidden="true" />
 
-                            <span class="shrink-0 text-[11px] font-medium tracking-normal text-muted-foreground uppercase">
+                            <span class="shrink-0 text-xs font-medium tracking-normal text-muted-foreground uppercase">
                                 [{{ items.repositories.length }} records]
                             </span>
                         </div>
@@ -67,13 +67,13 @@
                                     </div>
 
                                     <div class="flex min-h-36 gap-4 p-4">
-                                        <Avatar class="size-20 rounded-md border bg-background p-3 shadow-xs">
+                                        <Avatar class="size-20 bg-background p-3">
                                             <AvatarImage
                                                 :src="project.icon"
                                                 :alt="project.name"
                                                 class="object-contain"
                                             />
-                                            <AvatarFallback class="rounded-md text-xs font-semibold">
+                                            <AvatarFallback class="text-xs font-semibold">
                                                 {{ project.name }}
                                             </AvatarFallback>
                                         </Avatar>
@@ -83,7 +83,7 @@
                                                 {{ project.name }}
                                             </h3>
 
-                                            <p class="project-card-description mt-1 text-xs leading-relaxed text-muted-foreground">
+                                            <p class="mt-1 text-xs leading-relaxed text-muted-foreground line-clamp-3">
                                                 {{ project.description }}
                                             </p>
 
