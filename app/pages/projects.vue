@@ -26,7 +26,7 @@
                                 class="group flex min-w-0 items-center gap-3 py-2 text-left"
                             >
                                 <span
-                                    class="flex size-5 shrink-0 items-center justify-center text-primary transition-transform duration-200 group-hover:translate-x-0.5"
+                                    class="flex size-5 shrink-0 items-center justify-center text-primary transition-transform duration-200 group-hover:translate-x-0.5 group-data-[state=open]:rotate-90"
                                     aria-hidden="true"
                                 >
                                     ▸
