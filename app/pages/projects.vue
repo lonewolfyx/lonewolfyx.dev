@@ -15,9 +15,9 @@
 
             <div class="space-y-8">
                 <Collapsible
-                    v-for="(items, index) in openSource"
+                    v-for="items in openSource"
                     :key="items.organization"
-                    :default-open="index === 0"
+                    default-open
                     class="block"
                 >
                     <section class="space-y-6">
