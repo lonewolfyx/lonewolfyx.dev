@@ -2,7 +2,7 @@ import type { IOpenSource } from '~/types/open.source'
 
 export const openSource: IOpenSource[] = [
     {
-        organization: 'Ai',
+        organization: 'Ai Ecosystem',
         repositories: [
             {
                 icon: 'repository/clear-skills.svg',
@@ -15,6 +15,127 @@ export const openSource: IOpenSource[] = [
                 name: 'Usage Board',
                 description: 'An all-in-one dashboard to quickly analyze token usage from local json files',
                 url: 'https://github.com/lonewolfyx/usage-board',
+            },
+            {
+                icon: 'repository/codex-agent-bar.svg',
+                name: 'Codex Agent Bar',
+                description: 'Is a lightweight macOS menu bar app for monitoring your Codex quota at a glance',
+                url: 'https://github.com/lonewolfyx/clear-skills',
+            },
+            {
+                icon: 'repository/agent-track.svg',
+                name: 'Agent Track',
+                description: 'Lightweight CLI to visualize and trace the execution trajectory of a single agent session',
+                url: 'https://github.com/lonewolfyx/agent-track',
+            },
+            {
+                icon: 'repository/skills-config.svg',
+                name: 'Skills Config',
+                description: 'Declarative Git skills manager for AI coding agents. Define skills in skills.config.ts and automatically provision them during npm install / prepare.',
+                url: 'https://github.com/lonewolfyx/skills-config',
+            },
+        ],
+    },
+    {
+        organization: 'Nuxt Ecosystem',
+        repositories: [
+            {
+                icon: 'repository/nuxt-devkit-server.svg',
+                name: 'nuxt-devkit-server',
+                description: 'Create a local server for running nuxt node outputs in CLI tools.',
+                url: 'https://github.com/lonewolfyx/nuxt-devkit-server',
+            },
+        ],
+    },
+    {
+        organization: 'Shadcn Vue Ecosystem',
+        repositories: [
+            {
+                icon: 'repository/shadcn-vue-hooks.svg',
+                name: 'Shadcn Vue Hooks',
+                description: 'A Vue Hooks Collection built with Shadcn Vue',
+                url: 'https://github.com/lonewolfyx/shadcn-vue-hooks',
+            },
+            {
+                icon: 'repository/vue-blocks.svg',
+                name: 'Vue Blocks',
+                description: 'The ultimate front-end building block library specifically designed for Vue',
+                url: 'https://github.com/vue-blocks/vue-blocks',
+            },
+            {
+                icon: 'repository/shadcn-vue-registry.svg',
+                name: 'Shadcn Vue Registry',
+                description: '⚙️ quickly construct the registry.json files required for shadcn-vue',
+                url: 'https://github.com/ScaffoldCore/shadcn-vue-registry',
+            },
+            {
+                icon: 'repository/shadcn-nuxt-template.svg',
+                name: 'Shadcn Nuxt Template',
+                description: 'The ultimate front-end building block library specifically designed for Vue',
+                url: 'https://github.com/lonewolfyx/shadcn-nuxt-template',
+            },
+            {
+                icon: 'repository/shadcn-vue-registry.svg',
+                name: 'Shadcn Vue Registry Template',
+                description: 'A template for running your own shadcn vue registry.',
+                url: 'https://github.com/lonewolfyx/shadcn-vue-registry-template',
+            },
+            {
+                icon: 'repository/shadcn-install.svg',
+                name: 'Shadcn install',
+                description: 'Stop copying commands from the docs. A one-click CLI to batch install shadcn/ui components instantly without browsing documentation.',
+                url: 'https://github.com/lonewolfyx/shadcn-install',
+            },
+        ],
+    },
+    {
+        organization: 'tailwind Ecosystem',
+        repositories: [
+            {
+                icon: 'repository/tailwind-plugin-no-scrollbar.svg',
+                name: 'tailwind-plugin-no-scrollbar',
+                description: 'Tailwind CSS plugin that adds utilities to hide scrollbars (no-scrollbar / scrollbar-none) without disabling scrolling',
+                url: 'https://github.com/lonewolfyx/tailwind-plugin-no-scrollbar',
+            },
+        ],
+    },
+    {
+        organization: 'utilities',
+        repositories: [
+            {
+                icon: 'repository/local-pkg-bin.svg',
+                name: 'local-pkg-bin',
+                description: 'Easily retrieve the absolute paths of executable binaries provided by your project\'s local npm packages',
+                url: 'https://github.com/lonewolfyx/local-pkg-bin',
+            },
+        ],
+    },
+    {
+        organization: 'Starter Template',
+        repositories: [
+            {
+                icon: 'repository/cli-template.svg',
+                name: 'Cli Template',
+                description: 'My Cli Template',
+                url: 'https://github.com/lonewolfyx-template/cli-template',
+            },
+            {
+                icon: 'repository/git-yaml-template.svg',
+                name: 'Git Yaml Template',
+                description: 'My Git Yaml Template',
+                url: 'https://github.com/lonewolfyx-template/git-yaml-template',
+            },
+            {
+                icon: 'repository/nuxt-websocket-template.svg',
+                name: 'Nuxt WebSocket Template',
+                description: 'WebSocket Template for Nuxt',
+                url: 'https://github.com/lonewolfyx-template/nuxt-websocket-template',
+            },
+            {
+                icon: 'repository/nuxt-template.svg',
+                name: 'Nuxt Template',
+                description: 'My Nuxt Template',
+                url: 'https://github.com/lonewolfyx-template/nuxt-template',
             },
         ],
     },
@@ -62,29 +183,6 @@ export const openSource: IOpenSource[] = [
                 name: 'Ranks Live Api',
                 description: 'Daily hot list data, aggregate hot list of the whole network and all platforms',
                 url: 'https://github.com/Rankslive/RanksLiveApi',
-            },
-        ],
-    },
-    {
-        organization: 'Awesome',
-        repositories: [
-            {
-                icon: 'repository/awesome.svg',
-                name: 'Awesome Duyi',
-                description: 'code collection of duyi',
-                url: 'https://github.com/lonewolfyx/awesome-duyi',
-            },
-            {
-                icon: 'repository/awesome.svg',
-                name: 'Awesome Alfred Skyblue',
-                description: '🪂 code collection of 远方os(Alfred-Skyblue)',
-                url: 'https://github.com/lonewolfyx/awesome-alfred-skyblue',
-            },
-            {
-                icon: 'repository/shadcn-hub.svg',
-                name: 'Shadcn Hub',
-                description: 'A curated list of awesome things related to shadcn/ui.',
-                url: 'https://github.com/lonewolfyx/shadcn-hub',
             },
         ],
     },
@@ -142,66 +240,25 @@ export const openSource: IOpenSource[] = [
         ],
     },
     {
-        organization: 'Shadcn Vue',
+        organization: 'Awesome',
         repositories: [
             {
-                icon: 'repository/shadcn-vue-hooks.svg',
-                name: 'Shadcn Vue Hooks',
-                description: 'A Vue Hooks Collection built with Shadcn Vue',
-                url: 'https://github.com/lonewolfyx/shadcn-vue-hooks',
+                icon: 'repository/awesome.svg',
+                name: 'Awesome Duyi',
+                description: 'code collection of duyi',
+                url: 'https://github.com/lonewolfyx/awesome-duyi',
             },
             {
-                icon: 'repository/vue-blocks.svg',
-                name: 'Vue Blocks',
-                description: 'The ultimate front-end building block library specifically designed for Vue',
-                url: 'https://github.com/vue-blocks/vue-blocks',
+                icon: 'repository/awesome.svg',
+                name: 'Awesome Alfred Skyblue',
+                description: '🪂 code collection of 远方os(Alfred-Skyblue)',
+                url: 'https://github.com/lonewolfyx/awesome-alfred-skyblue',
             },
             {
-                icon: 'repository/shadcn-vue-registry.svg',
-                name: 'Shadcn Vue Registry',
-                description: '⚙️ quickly construct the registry.json files required for shadcn-vue',
-                url: 'https://github.com/ScaffoldCore/shadcn-vue-registry',
-            },
-            {
-                icon: 'repository/shadcn-nuxt-template.svg',
-                name: 'Shadcn Nuxt Template',
-                description: 'The ultimate front-end building block library specifically designed for Vue',
-                url: 'https://github.com/lonewolfyx/shadcn-nuxt-template',
-            },
-            {
-                icon: 'repository/shadcn-vue-registry.svg',
-                name: 'Shadcn Vue Registry Template',
-                description: 'A template for running your own shadcn vue registry.',
-                url: 'https://github.com/lonewolfyx/shadcn-vue-registry-template',
-            },
-        ],
-    },
-    {
-        organization: 'Starter Template',
-        repositories: [
-            {
-                icon: 'repository/cli-template.svg',
-                name: 'Cli Template',
-                description: 'My Cli Template',
-                url: 'https://github.com/lonewolfyx-template/cli-template',
-            },
-            {
-                icon: 'repository/git-yaml-template.svg',
-                name: 'Git Yaml Template',
-                description: 'My Git Yaml Template',
-                url: 'https://github.com/lonewolfyx-template/git-yaml-template',
-            },
-            {
-                icon: 'repository/nuxt-websocket-template.svg',
-                name: 'Nuxt WebSocket Template',
-                description: 'WebSocket Template for Nuxt',
-                url: 'https://github.com/lonewolfyx-template/nuxt-websocket-template',
-            },
-            {
-                icon: 'repository/nuxt-template.svg',
-                name: 'Nuxt Template',
-                description: 'My Nuxt Template',
-                url: 'https://github.com/lonewolfyx-template/nuxt-template',
+                icon: 'repository/shadcn-hub.svg',
+                name: 'Shadcn Hub',
+                description: 'A curated list of awesome things related to shadcn/ui.',
+                url: 'https://github.com/lonewolfyx/shadcn-hub',
             },
         ],
     },
