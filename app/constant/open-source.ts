@@ -20,7 +20,7 @@ export const openSource: IOpenSource[] = [
                 icon: 'repository/codex-agent-bar.svg',
                 name: 'Codex Agent Bar',
                 description: 'Is a lightweight macOS menu bar app for monitoring your Codex quota at a glance',
-                url: 'https://github.com/lonewolfyx/clear-skills',
+                url: 'https://github.com/lonewolfyx/codex-agent-bar',
             },
             {
                 icon: 'repository/agent-track.svg',
