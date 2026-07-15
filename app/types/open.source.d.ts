@@ -6,6 +6,7 @@ export interface IOpenSourceRepository {
 }
 
 export interface IOpenSource {
+    id: string
     organization: string
     repositories: IOpenSourceRepository[]
 }

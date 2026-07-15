@@ -2,6 +2,7 @@ import type { IOpenSource } from '~/types/open.source'
 
 export const openSource: IOpenSource[] = [
     {
+        id: 'ai-ecosystem',
         organization: 'Ai Ecosystem',
         repositories: [
             {
@@ -37,6 +38,7 @@ export const openSource: IOpenSource[] = [
         ],
     },
     {
+        id: 'nuxt-ecosystem',
         organization: 'Nuxt Ecosystem',
         repositories: [
             {
@@ -48,6 +50,7 @@ export const openSource: IOpenSource[] = [
         ],
     },
     {
+        id: 'shadcn-vue-ecosystem',
         organization: 'Shadcn Vue Ecosystem',
         repositories: [
             {
@@ -89,6 +92,7 @@ export const openSource: IOpenSource[] = [
         ],
     },
     {
+        id: 'tailwind-ecosystem',
         organization: 'tailwind Ecosystem',
         repositories: [
             {
@@ -100,6 +104,7 @@ export const openSource: IOpenSource[] = [
         ],
     },
     {
+        id: 'utilities',
         organization: 'utilities',
         repositories: [
             {
@@ -111,6 +116,7 @@ export const openSource: IOpenSource[] = [
         ],
     },
     {
+        id: 'starter-template',
         organization: 'Starter Template',
         repositories: [
             {
@@ -140,6 +146,7 @@ export const openSource: IOpenSource[] = [
         ],
     },
     {
+        id: 'websites-online-tools',
         organization: 'WebSites / Online Tools',
         repositories: [
             {
@@ -187,6 +194,7 @@ export const openSource: IOpenSource[] = [
         ],
     },
     {
+        id: 'cli',
         organization: 'Cli',
         repositories: [
             {
@@ -240,6 +248,7 @@ export const openSource: IOpenSource[] = [
         ],
     },
     {
+        id: 'awesome',
         organization: 'Awesome',
         repositories: [
             {
