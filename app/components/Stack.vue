@@ -46,7 +46,7 @@ const stack = {
             href: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
         },
         {
-            name: 'Tavascript',
+            name: 'TypeScript',
             icon: 'devicon:typescript',
             href: 'https://www.typescriptlang.org/',
         },
