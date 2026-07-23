@@ -140,7 +140,7 @@ const stack = {
             name: 'codex',
             icon: 'icon:codex',
             theme: {
-                icon: 'bg-clip-text bg-gradient-to-b from-[#B1A7FF] via-[#7A9DFF] to-[#3941FF] text-transparent',
+                // icon: 'bg-clip-text bg-gradient-to-b from-[#B1A7FF] via-[#7A9DFF] to-[#3941FF] text-transparent',
             },
             href: 'https://chatgpt.com/codex/cloud',
         },
