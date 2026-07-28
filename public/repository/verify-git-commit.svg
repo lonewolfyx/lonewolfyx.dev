@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <defs>
+    <linearGradient id="panelGradient" x1="180" y1="170" x2="840" y2="860" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#34445d"/>
+      <stop offset="1" stop-color="#1b2638"/>
+    </linearGradient>
+
+    <linearGradient id="orangeGradient" x1="460" y1="260" x2="635" y2="440" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff8b42"/>
+      <stop offset="1" stop-color="#ff713d"/>
+    </linearGradient>
+
+    <linearGradient id="coralGradient" x1="590" y1="430" x2="780" y2="565" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff8a67"/>
+      <stop offset="1" stop-color="#ff6657"/>
+    </linearGradient>
+
+    <linearGradient id="successGradient" x1="570" y1="580" x2="735" y2="730" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#a8ef45"/>
+      <stop offset="1" stop-color="#6bd323"/>
+    </linearGradient>
+
+    <filter id="panelShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="30" stdDeviation="35" flood-color="#05070b" flood-opacity="0.55"/>
+    </filter>
+
+    <filter id="shapeShadow" x="-30%" y="-30%" width="170%" height="180%">
+      <feDropShadow dx="0" dy="18" stdDeviation="12" flood-color="#080d16" flood-opacity="0.52"/>
+    </filter>
+
+    <filter id="softGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Commit graph connections -->
+  <g fill="none" stroke="#202d42" stroke-width="34" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M334 492 L523 315"/>
+    <path d="M334 492 H605 Q635 492 660 475 Q692 453 730 476"/>
+    <path d="M334 492 L494 652"/>
+  </g>
+
+  <!-- Warm accent segments -->
+  <path d="M445 389 L523 315" fill="none" stroke="url(#orangeGradient)" stroke-width="34" stroke-linecap="round"/>
+  <path d="M568 492 H605 Q635 492 660 475 Q692 453 730 476" fill="none" stroke="url(#coralGradient)" stroke-width="34" stroke-linecap="round"/>
+
+  <!-- Commit nodes -->
+  <g filter="url(#shapeShadow)">
+    <circle cx="334" cy="492" r="77" fill="#536780" stroke="#172236" stroke-width="3"/>
+    <circle cx="537" cy="300" r="78" fill="url(#orangeGradient)" stroke="#172236" stroke-width="3"/>
+    <circle cx="731" cy="477" r="74" fill="url(#coralGradient)" stroke="#172236" stroke-width="3"/>
+  </g>
+
+  <!-- Shield -->
+  <g filter="url(#shapeShadow)">
+    <path d="M650 505
+             C677 505 727 528 769 548
+             C787 557 798 575 798 596
+             V687
+             C798 755 748 807 650 842
+             C552 807 502 755 502 687
+             V596
+             C502 575 513 557 531 548
+             C573 528 623 505 650 505Z"
+          fill="#24334a" stroke="#101827" stroke-width="5"/>
+
+    <path d="M650 535
+             C676 535 717 554 752 571
+             C763 576 770 587 770 600
+             V683
+             C770 735 731 775 650 806
+             C569 775 530 735 530 683
+             V600
+             C530 587 537 576 548 571
+             C583 554 624 535 650 535Z"
+          fill="#172337" stroke="#4a5d76" stroke-width="2.5"/>
+  </g>
+
+  <path d="M584 661 L630 708 L722 603"
+        fill="none" stroke="#2d6f13" stroke-width="43" stroke-linecap="round" stroke-linejoin="round" opacity="0.45" transform="translate(0 11)"/>
+  <path d="M584 661 L630 708 L722 603"
+        fill="none" stroke="url(#successGradient)" stroke-width="39" stroke-linecap="round" stroke-linejoin="round"
+        filter="url(#softGlow)"/>
+
+</svg>

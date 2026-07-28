@@ -245,6 +245,12 @@ export const openSource: IOpenSource[] = [
                 description: 'A high-performance CLI utility designed to streamline Git repository maintenance by swiftly removing obsolete local and remote branches.',
                 url: 'https://github.com/lonewolfyx/clear-branch',
             },
+            {
+                icon: 'repository/verify-git-commit.svg',
+                name: 'Verify Git Commit',
+                description: 'Validate Git commit messages with Conventional Commit rules.',
+                url: 'https://github.com/lonewolfyx/verify-git-commit',
+            },
         ],
     },
     {
