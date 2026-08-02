@@ -134,7 +134,7 @@ date: 2026-07-28
 | 76 | **Benchmark-DD｜Benchmark-Driven Development** | 基准驱动开发 | **评估实践，本文简称**；用稳定基准辅助模型、Prompt 和工具选型，但通用基准不能替代产品自己的 eval |
 | 77 | **Guardrail-DD｜Guardrail-Driven Development** | 护栏驱动开发 | **AI 安全实践，本文简称**；将权限、输入输出校验、沙箱、回滚和审计作为前置约束 |
 
-`Eval-Driven Development` 借鉴了 `TDD` **“先定义可验证目标，再迭代实现”** 的思路，但二者不是简单的“确定性 vs. 概率性”：`TDD` 以自动化测试驱动代码设计与实现；`LLM / Agent eval` 通常在代表性任务集上组合代码型、模型型和人工评分器。确定性断言仍然可以是 `Agent eval` 的一部分，只有在输出波动明显时才需要重复采样并报告分布。二者是互补关系，`eval` 不能替代常规的单元、集成和端到端测试。[Anthropic 的 Agent eval 指南](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents)也将多种评分方式视为可组合手段。
+`Eval-Driven Development` 借鉴了 `TDD` **“先定义可验证目标，再迭代实现”** 的思路，但二者不是简单的“确定性 vs. 概率性”：`TDD` 以自动化测试驱动代码设计与实现；`LLM / Agent eval` 通常在代表性任务集上组合代码型、模型型和人工评分器。确定性断言仍然可以是 `Agent eval` 的一部分，只有在输出波动明显时才需要重复采样并报告分布。二者是互补关系，`eval` 不能替代常规的单元、集成和端到端测试。[Anthropic 的 Agent eval 指南](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents) 也将多种评分方式视为可组合手段。
 
 `Human-in-the-loop`、`权限策略`、`tracing`、`benchmarks` 和 `guardrails` 都很重要，但不应仅仅因为名称后面能加 `-DD`，就把它们说成已经形成统一方法论。
 
