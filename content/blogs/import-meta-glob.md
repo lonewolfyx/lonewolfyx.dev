@@ -11,6 +11,8 @@ date: 2026-08-05
 const modules = import.meta.glob('./modules/**/*.ts')
 ```
 
+![TS2339](/ts2339.png)
+
 写完后 `ts` 就提示了 `TS2339: Property 'glob' does not exist on type 'ImportMeta'` 错误。就是因为 `TypeScript` 默认的
 `ImportMeta` 接口里根本没有 `glob`。因为[它是 `vite` 专属的](https://vite.dev/guide/features.html#glob-import) ，但是却在我这个
 `tsdown` 中可以使用！
@@ -39,7 +41,8 @@ const modules = import.meta.glob('./modules/**/*.ts')
 - https://github.com/rolldown/tsdown/blob/main/src/features/rolldown.ts#L174
 - https://github.com/rolldown/rolldown/blob/main/crates/rolldown_plugin_vite_import_glob/src/lib.rs
 
-其实仔细想一想也没什么任何毛病，驱动 `vite` 与 `tsdown` 都是 `rolldown`，既然底层实现都一样，那么 `tsdown` 也可以支持 `import.meta.glob`
+其实仔细想一想也没什么任何毛病，驱动 `vite` 与 `tsdown` 都是 `rolldown`，既然底层实现都一样，那么 `tsdown` 也可以支持
+`import.meta.glob`
 
 最后说一句，这个语法不再是 `vite` 的专利了。
 
