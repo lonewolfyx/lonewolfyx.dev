@@ -92,6 +92,18 @@ export const openSource: IOpenSource[] = [
         ],
     },
     {
+        id: 'github-ecosystem',
+        organization: 'github Ecosystem',
+        repositories: [
+            {
+                icon: 'repository/github-unlimited-orgs.svg',
+                name: 'github-unlimited-orgs',
+                description: ':octocat: Show all GitHub organizations for any user — API + browser extension + Tampermonkey script',
+                url: 'https://github.com/lonewolfyx/github-unlimited-orgs',
+            },
+        ],
+    },
+    {
         id: 'tailwind-ecosystem',
         organization: 'tailwind Ecosystem',
         repositories: [
